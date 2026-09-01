@@ -1,0 +1,164 @@
+section {
+  padding: 80px 20px;
+}
+:root {
+  --cream: #FFF6EA;
+  --coral: #FF6B5B;
+  --plum: #3D2C4A;
+  --ink-soft: #5C5566;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: sans-serif;
+  background: var(--cream);
+  color: var(--ink-soft);
+}
+
+h1, h2 { color: var(--plum); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--plum);
+}
+/* ...your existing CSS above... */
+
+#menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #menu-btn {
+    display: block;
+  }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-links.open {
+    display: flex;
+  }
+}
+#filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid var(--plum);
+  background: transparent;
+  color: var(--plum);
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-btn.active {
+  background: var(--plum);
+  color: #fff;
+}
+.filter-btn:hover {
+  background: var(--coral);
+  color: #fff;
+  border-color: var(--coral);
+}
+
+#theme-btn:hover, #menu-btn:hover {
+  opacity: 0.7;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.project-card.hidden {
+  display: none;
+}
+body.dark {
+  --cream: #1E1B24;
+  --plum: #FFF6EA;
+  --ink-soft: #C9C3D1;
+}
+nav ul a.active-link {
+  color: var(--coral);
+  font-weight: 700;
+}
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+input, textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 6px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+input.invalid, textarea.invalid {
+  border-color: #e14f41;
+}
+
+.error-msg {
+  color: #e14f41;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+
+#form-success {
+  color: var(--teal);
+  font-weight: 600;
+}
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--plum);
+  font-weight: 600;
+}
+#contact-form > div {
+  margin-bottom: 16px;
+}

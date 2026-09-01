@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anushka — Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#top">anushka</a>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="theme-btn">🌙</button>
+  <button id="menu-btn">☰</button>
+</nav>
+  <section id="top">
+    <h1>Hi, I'm Anushka</h1>
+    <p>Full-stack developer.</p>
+  </section>
+
+  <section id="about">
+  <h2>About</h2>
+  <p>I'm an entry-level full-stack developer building projects I'm genuinely proud of — with real database schemas and real edge cases, not tutorial clones.</p>
+  <p>I'm especially drawn to social-impact work — tools that solve a coordination problem for people who don't usually get well-designed software.</p>
+  <p>I also design in Figma and do user research when a project needs it, so I tend to think about features from both sides of the screen.</p>
+</section>
+
+  <section id="work">
+  <h2>Work</h2>
+
+  <div id="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="social-impact">Social Impact</button>
+    <button class="filter-btn" data-filter="web-app">Web App</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+  </div>
+
+  <div id="project-list">
+    <div class="project-card" data-category="social-impact">
+  <h3>BloodConnect</h3>
+  <p>A full-stack blood donation and management platform connecting donors with people who need them, built on a normalized relational schema to keep eligibility and matching logic reliable.</p>
+  <p><strong>Stack:</strong> React.js, Node.js, Express.js, MySQL </p>
+</div>
+    <div class="project-card" data-category="design">
+  <h3><a href="https://encouraging-let-870968.framer.app/" >TransitLive</a></h3>
+  <p>A UI/UX case study for smart public bus tracking, designed to cut commuter uncertainty through real-time tracking, crowd-level indicators, and route visualization.</p>
+  <p><strong>Process:</strong> User research and pain-point analysis on existing transit apps, followed by a full high-fidelity flow — route overview, live updates, interactive map, crowd alerts, and boarding feedback screens.</p>
+  <p><strong>Tools:</strong> Figma, Framer</p>
+</div>
+  </div>
+</section>
+
+  <section id="contact">
+  <h2>Contact</h2>
+  <form id="contact-form" novalidate>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <p class="error-msg" id="name-error"></p>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+      <p class="error-msg" id="email-error"></p>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+      <p class="error-msg" id="message-error"></p>
+    </div>
+    <button type="submit">Send</button>
+    <p id="form-success"></p>
+  </form>
+</section>
+<div class="social-links">
+  <a href="https://github.com/nushka08" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://linkedin.com/in/anushka-mishra-" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://drive.google.com/file/d/1ioIDc3lFeoB6TR54dNJK7NtdV0Cni2Mz/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+  <a href="mailto:anushkamishra3108@gmail.com">Email</a>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
