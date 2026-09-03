@@ -5,18 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anushka — Developer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-  <a href="#top">anushka</a>
-  <ul id="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button id="theme-btn">🌙</button>
-  <button id="menu-btn">☰</button>
+  <a href="#top" class="logo">anushka</a>
+  <div class="nav-group">
+    <ul id="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+
+    </ul>
+    <div class="nav-right">
+      <div class="social-icons">
+        <a href="https://github.com/nushka08" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/anushka-mishra-" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/a_nushka_888" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+    <button id="theme-btn">🌙</button>
+    <button id="menu-btn">☰</button>
 </nav>
   <section id="top">
     <h1>Hi, I'm Anushka</h1>
@@ -55,36 +68,24 @@
   </div>
 </section>
 
-  <section id="contact">
-  <h2>Contact</h2>
-  <form id="contact-form" novalidate>
-    <div>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name">
-      <p class="error-msg" id="name-error"></p>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email">
-      <p class="error-msg" id="email-error"></p>
-    </div>
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message" name="message"></textarea>
-      <p class="error-msg" id="message-error"></p>
-    </div>
-    <button type="submit">Send</button>
-    <p id="form-success"></p>
-  </form>
-</section>
 <div class="social-links">
   <a href="https://github.com/nushka08" target="_blank" rel="noopener">GitHub</a>
   <a href="https://linkedin.com/in/anushka-mishra-" target="_blank" rel="noopener">LinkedIn</a>
   <a href="https://drive.google.com/file/d/1ioIDc3lFeoB6TR54dNJK7NtdV0Cni2Mz/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
   <a href="mailto:anushkamishra3108@gmail.com">Email</a>
 </div>
-
-
+<footer>
+  <a href="#top" class="back-to-top">↑</a>
+  <div class="footer-content">
+    <p class="footer-copy">© 2026 Anushka Mishra</p>
+    <ul class="footer-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</footer>
   <script src="script.js"></script>
 </body>
 </html>
