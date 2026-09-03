@@ -510,5 +510,5 @@ footer {
 .portfolio-card:hover .portfolio-arrow {
   opacity: 1;
   transform: translateY(-50%) translateX(0);
-  border-color: #666769;
+  border-color: #757679;
 }
