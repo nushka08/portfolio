@@ -395,20 +395,18 @@ footer {
   background: #ece2e2;
 }
 .desc1{
-  font-size: 26px;
   color: rgb(117,117,117);
   display: block;
   height:31.18px;
   line-height: 31.18px;
-  margin-bottom:24px;
-  margin-right: -80px;
+  margin: 16px 0 32px;
+  font-size: 1.1rem;
 }
 .desc2{
   font-size:18px;
   color:rgb(51,51,51);
-  margin-bottom:24px;
   line-height:30px;
   height:90px;
-  margin-right: -80px;
+  margin: 16px 0 32px;
   align-items: center;
 }
